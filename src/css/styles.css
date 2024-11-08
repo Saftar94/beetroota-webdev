@@ -708,7 +708,6 @@ textarea {
   .home-header::before {
     top: -65px;
     height: 10px;
-    width: 200px;
   }
 }
 
@@ -810,7 +809,6 @@ textarea {
   .home-header::before {
     top: -65px;
     height: 10px;
-    width: 200px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -885,7 +883,6 @@ textarea {
   .home-header::before {
     top: -65px;
     height: 10px;
-    width: 200px;
   }
 }
 @media (min-width: 1025px) {
@@ -1040,7 +1037,6 @@ textarea {
   .services-header::before {
     top: -65px;
     height: 10px;
-    width: 200px;
   }
 }
 
@@ -1231,7 +1227,6 @@ textarea {
   .portgolio-header::before {
     top: -65px;
     height: 10px;
-    width: 200px;
   }
 }
 
@@ -1451,7 +1446,6 @@ textarea {
   .aboutus-header::before {
     top: -65px;
     height: 10px;
-    width: 200px;
   }
 }
 

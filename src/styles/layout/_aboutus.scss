@@ -108,7 +108,7 @@
 @use "../components/mixin" as *;
 
 .aboutus {
-  padding: 50px 20px; // Уменьшаем отступы для мобильных устройств
+  padding: 50px 20px; 
   background-color: var(--text-colorwh);
   color: var(--text-colorbg);
 }
@@ -118,8 +118,7 @@
 }
 
 .aboutus-header::before {
-  width: 40px; // Меньше ширина для мобильных устройств
-}
+  width: 40px; 
 
 .aboutus-hetext {
   @include text-style(var(--text-colorbg));
@@ -127,16 +126,16 @@
 
 .aboutus-underblock {
   display: flex;
-  flex-direction: column; // Для мобильных устройств элементы должны быть друг под другом
-  align-items: center; // Центрируем содержимое
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .aboutus-description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 20px; // Уменьшаем отступы для мобильных устройств
-  padding-top: 100px; // Меньше отступ сверху для мобильных
+  margin: 0 20px; 
+  padding-top: 100px; 
 }
 
 .aboutus-desheader {
@@ -145,29 +144,29 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px; // Уменьшаем отступ
+  margin-bottom: 20px; 
 }
 
 .aboutus-main {
-  display: block; // Для мобильных устройств можно сделать блоковый элемент
+  display: block;  
 }
 
 .aboutus-destext {
   line-height: 1.25;
   font-family: var(--text-body);
-  font-size: 20px; // Уменьшаем размер текста для мобильных
+  font-size: 20px; 
   letter-spacing: 0.03em;
   font-weight: 400;
-  margin-bottom: 30px; // Меньше отступ
+  margin-bottom: 30px; 
 }
 
 .aboutus-name-container {
   font-family: var(--text-body);
-  font-size: 16px; // Меньше размер шрифта
+  font-size: 16px; 
   letter-spacing: 0.03em;
   font-weight: 400;
   display: flex;
-  flex-direction: column; // Для мобильных устройств элементы идут в столбик
+  flex-direction: column; 
   align-items: flex-start;
 }
 
@@ -177,14 +176,14 @@
 
 .icon-aboutus {
   display: flex;
-  justify-content: space-around; // Для мобильных делаем равномерное распределение
-  flex-wrap: wrap; // Даем возможность иконкам переноситься
+  justify-content: space-around; 
+  flex-wrap: wrap; 
 }
 
 .aboutus-svg {
   border-radius: 50%;
   width: 50px;
-  height: 50px; // Уменьшаем размер иконок
+  height: 50px; 
   fill: var(--text-colorbg);
 }
 
@@ -197,12 +196,12 @@
 }
 
 .aboutus-row-svg:not(:last-child) {
-  margin-bottom: 15px; // Меньше отступы между иконками
+  margin-bottom: 15px; 
 }
 
 @media (min-width: 768px) {
   .aboutus {
-    padding: 100px 40px; // Увеличиваем отступы
+    padding: 100px 40px; 
   }
 
   .aboutus-header::before {
@@ -210,13 +209,13 @@
   }
 
   .aboutus-underblock {
-    flex-direction: row; // Для планшетов элементы идут в ряд
-    justify-content: flex-start; // Выравниваем элементы по началу
+    flex-direction: row; 
+    justify-content: flex-start; 
   }
 
   .aboutus-description {
-    padding-top: 180px; // Увеличиваем отступ сверху
-    margin-left: 40px; // Добавляем отступ слева
+    padding-top: 180px; 
+    margin-left: 40px; 
   }
 
   .aboutus-main {
@@ -224,16 +223,16 @@
   }
 
   .aboutus-destext {
-    font-size: 24px; // Увеличиваем размер текста
-    margin-bottom: 40px; // Увеличиваем отступ
+    font-size: 24px; 
+    margin-bottom: 40px; 
   }
 
   .aboutus-name-container {
-    font-size: 18px; // Немного увеличиваем шрифт
+    font-size: 18px; 
   }
 
   .icon-aboutus {
-    justify-content: space-between; // Для планшета иконки должны быть более равномерно распределены
+    justify-content: space-between; 
   }
 
   .aboutus-svg {
@@ -249,7 +248,7 @@
 
 @media (min-width: 1024px) {
   .aboutus {
-    padding: 125px 80px; // Увеличиваем отступы для десктопов
+    padding: 125px 80px; 
   }
 
   .aboutus-header::before {
@@ -257,26 +256,25 @@
   }
 
   .aboutus-underblock {
-    justify-content: space-between; // Располагаем элементы по бокам
+    justify-content: space-between; 
     align-items: center;
   }
 
   .aboutus-description {
-    margin-left: 158px; // Делаем отступ больше для десктопа
-    padding-top: 238px; // Больший отступ сверху
+    margin-left: 158px; 
+    padding-top: 238px; 
   }
 
   .aboutus-destext {
-    font-size: 32px; // Увеличиваем размер шрифта для десктопа
-    margin-bottom: 50px;
+    font-size: 32px; 
   }
 
   .aboutus-name-container {
-    font-size: 20px; // Увеличиваем размер шрифта для десктопа
+    font-size: 20px; 
   }
 
   .icon-aboutus {
-    justify-content: space-between; // Равномерное распределение
+    justify-content: space-between; 
   }
 
   .aboutus-svg {

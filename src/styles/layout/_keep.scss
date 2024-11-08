@@ -34,31 +34,31 @@
 // }
 
 .keep {
-  padding: 80px 20px; // Меньше отступы для мобильных устройств
+  padding: 80px 20px;
 }
 
 .keep-main {
-  text-align: center; // Выравнивание по центру для мобильных
+  text-align: center;
 }
 
 .keep-header {
   line-height: 1.25;
   font-family: var(--text-body);
   color: var(--text-colorwh);
-  font-size: 32px; // Меньший размер шрифта для мобильных
+  font-size: 32px;
   letter-spacing: 0.03em;
   font-weight: 700;
   margin-bottom: 20px;
-  padding: 0px 20px; // Меньше padding на мобильных
+  padding: 0px 20px;
 }
 
 .keep-button {
-  padding: 16px 40px; // Меньше отступы для кнопки
+  padding: 16px 40px;
   background-color: var(--text-colorwh);
   color: var(--text-colorbg);
   line-height: 1.25;
   font-family: var(--text-body);
-  font-size: 18px; // Уменьшаем размер шрифта для кнопки
+  font-size: 18px;
   letter-spacing: 0.03em;
   font-weight: 500;
   text-transform: uppercase;
@@ -66,34 +66,34 @@
 
 @media (min-width: 768px) {
   .keep {
-    padding: 120px 40px; // Увеличиваем отступы для планшетов
+    padding: 120px 40px;
   }
 
   .keep-header {
-    font-size: 48px; // Увеличиваем размер шрифта
-    margin-bottom: 25px; // Увеличиваем отступ
-    padding: 0px 50px; // Увеличиваем padding
+    font-size: 48px;
+    margin-bottom: 25px;
+    padding: 0px 50px;
   }
 
   .keep-button {
-    padding: 18px 45px; // Немного увеличиваем отступы
-    font-size: 22px; // Увеличиваем размер шрифта для кнопки
+    padding: 18px 45px;
+    font-size: 22px;
   }
 }
 
 @media (min-width: 1024px) {
   .keep {
-    padding: 200px 80px; // Увеличиваем отступы для десктопов
+    padding: 200px 80px;
   }
 
   .keep-header {
-    font-size: 72px; // Оставляем размер шрифта для десктопов
-    margin-bottom: 30px; // Увеличиваем отступ
-    padding: 0px 130px; // Большие отступы по бокам
+    font-size: 72px;
+    margin-bottom: 30px;
+    padding: 0px 130px;
   }
 
   .keep-button {
-    padding: 22px 50px; // Увеличиваем отступы для кнопки
-    font-size: 28px; // Увеличиваем размер шрифта для кнопки
+    padding: 22px 50px;
+    font-size: 28px;
   }
 }

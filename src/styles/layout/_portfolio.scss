@@ -282,7 +282,7 @@
   fill: var(--text-colorbg);
 }
 
-/* Медиазапрос для планшетов */
+
 @media (min-width: 768px) {
   .portfolio {
     padding: 80px 0;
@@ -297,7 +297,7 @@
   }
 
   .portfolio-list {
-    flex-direction: row; /* Становится строкой на планшете */
+    flex-direction: row; /
   }
 
   .portfolio-blockimg {
@@ -309,7 +309,6 @@
   }
 }
 
-/* Медиазапрос для десктопов */
 @media (min-width: 1024px) {
   .portfolio {
     padding: 125px 0;
@@ -324,11 +323,11 @@
   }
 
   .portfolio-list:nth-child(odd) {
-    flex-direction: row; /* Картинка слева, текст справа */
+    flex-direction: row; 
   }
 
   .portfolio-list:nth-child(even) {
-    flex-direction: row-reverse; /* Картинка справа, текст слева */
+    flex-direction: row-reverse; 
   }
 
   .portfolio-blockimg {
