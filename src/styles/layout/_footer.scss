@@ -1,0 +1,83 @@
+// .footer-main {
+//   display: flex;
+//   flex-direction: row;
+// }
+
+// .footer_nav {
+//   flex-grow: 1;
+//   justify-content: center;
+// }
+// .footer {
+//   padding: 35px 0;
+//   top: 0;
+//   width: 100%;
+//   position: relative;
+//   z-index: 1000;
+// }
+
+// .footer::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   border-bottom: 1px solid black;
+// }
+
+.footer {
+  padding: 20px 10px; // Уменьшаем отступы для мобильных
+  top: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column; // Для мобильных элементов должны располагаться вертикально
+  align-items: center; // Центрируем элементы
+}
+
+.footer_nav {
+  flex-grow: 0;
+  justify-content: center;
+  text-align: center; // Центрируем навигацию для мобильных
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--text-colorbg); // Изменяем цвет границы на подходящий
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 35px 20px; // Увеличиваем отступы для планшетов
+  }
+
+  .footer-main {
+    flex-direction: row; // Меняем направление на горизонтальное
+    justify-content: space-between; // Распределяем элементы по ширине
+  }
+
+  .footer_nav {
+    text-align: left; // Для планшетов выравниваем текст по левому краю
+    flex-grow: 1; // Позволяем навигации занимать все доступное пространство
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 50px 40px; // Еще большие отступы для десктопов
+  }
+
+  .footer-main {
+    flex-direction: row; // Горизонтальное расположение элементов
+    justify-content: space-between; // Равномерное распределение элементов по ширине
+  }
+
+  .footer_nav {
+    text-align: left; // Для десктопов выравниваем навигацию слева
+  }
+}

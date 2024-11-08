@@ -1,0 +1,82 @@
+//Header Button
+.header-button {
+  padding: 5px 10px;
+  font-family: var(--text-body);
+  background-color: transparent;
+  color: #333;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #2c363f;
+  color: #fff;
+  border-color: #2c363f;
+}
+//Home Button
+
+@mixin button-style(
+  $bg-color,
+  $text-color,
+  $hover-bg-color,
+  $hover-text-color
+) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 13px 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: $hover-bg-color;
+    color: $hover-text-color;
+    transform: translateY(-5px);
+    border: 1px solid var(--text-colorwh);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.home-btn {
+  @include button-style(#2c363f, #fff, #fff, #2c363f);
+}
+
+//Portfolio Button
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.button-portfolio {
+  @include button-style(#2c363f, #fff, #fff, #2c363f);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-button {
+    padding: 10px 20px;
+  }
+
+  .home-btn {
+    padding: 18px 35px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-button {
+    padding: 10px 20px;
+  }
+
+  .home-btn {
+    padding: 18px 35px;
+  }
+}

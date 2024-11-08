@@ -1,0 +1,142 @@
+@use "../components/mixin" as *;
+
+.services {
+  background-color: var(--text-colorwh);
+  color: var(--text-colorbg);
+  padding: 60px 0;
+}
+
+.services-header {
+  @include header-style(var(--text-colorbg));
+}
+.services-header::before {
+  width: 60px;
+}
+
+.services-letext {
+  @include text-style(var(--text-colorbg));
+}
+
+.services-button {
+  background-color: var(--text-colorbg);
+  border-radius: 50%;
+  font-size: 24px;
+  font-family: var(--text-body);
+  letter-spacing: 1.5px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  white-space: normal;
+  font-weight: 600;
+  width: 150px;
+  height: 150px;
+}
+
+.services-number {
+  font-size: 56px;
+  font-family: var(--text-body);
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.items-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-items {
+  cursor: pointer;
+  padding: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  transition: max-height 0.4s ease-in-out;
+}
+.services-left {
+  margin-right: 320px;
+}
+
+.service-title {
+  font-size: 32px;
+  font-family: var(--text-body);
+  font-weight: 200;
+}
+
+.service-description {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  font-family: var(--text-body);
+  color: var(--text-colorbg);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+
+.services-items:hover .service-description {
+  max-height: 200px;
+  opacity: 1;
+}
+.services-items:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-colorbg);
+}
+
+.iconservices-svg {
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-container {
+  width: 35px;
+  height: 35px;
+  background-color: var(--text-colorbg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .services {
+    padding: 100px 0;
+  }
+  .services-header::before {
+    width: 80px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .services {
+    padding: 125px 0;
+  }
+  .services-header::before {
+    width: 100px;
+  }
+
+  .services-main {
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}

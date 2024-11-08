@@ -1,0 +1,291 @@
+// @use "../components/mixin" as *;
+
+// .aboutus {
+//   padding: 125px 0px;
+//   background-color: var(--text-colorwh);
+//   color: var(--text-colorbg);
+// }
+
+// .aboutus-header {
+//   @include header-style(var(--text-colorbg));
+// }
+
+// .aboutus-header::before {
+//   width: 60px;
+// }
+
+// .aboutus-hetext {
+//   @include text-style(var(--text-colorbg));
+// }
+
+// .aboutus-underblock {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .aboutus-description {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   margin-left: 158px;
+//   padding-top: 238px;
+// }
+
+// .aboutus-desheader {
+//   height: 36px;
+//   width: 45px;
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   margin-bottom: 35px;
+// }
+
+// .aboutus-main {
+//   display: flex;
+// }
+
+// .aboutus-destext {
+//   line-height: 1.25;
+//   font-family: var(--text-body);
+//   font-size: 32px;
+//   letter-spacing: 0.03em;
+//   font-weight: 400;
+//   margin-bottom: 50px;
+// }
+
+// .aboutus-name-container {
+//   font-family: var(--text-body);
+//   font-size: 20px;
+//   letter-spacing: 0.03em;
+//   font-weight: 400;
+//   display: flex;
+//   width: 100%;
+//   justify-content: space-between;
+//   align-items: flex-end;
+// }
+
+// .aboutus-name {
+//   margin-bottom: 10px;
+// }
+
+// .icon-aboutus {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .aboutus-svg {
+//   border-radius: 50%;
+//   width: 65px;
+//   height: 65px;
+//   fill: var(--text-colorbg);
+// }
+
+// .aboutus-row-svg {
+//   border-radius: 50%;
+//   width: 65px;
+//   height: 65px;
+//   fill: var(--text-colorwh);
+//   background-color: var(--text-colorbg);
+// }
+
+// .aboutus-row-svg:not(:last-child) {
+//   margin-right: 20px;
+// }
+
+// @media (min-width: 768px) {
+//   .aboutus-header::before {
+//     width: 80px;
+//   }
+// }
+
+// @media (min-width: 1024px) {
+//   .aboutus-header::before {
+//     width: 100px;
+//   }
+// }
+
+@use "../components/mixin" as *;
+
+.aboutus {
+  padding: 50px 20px; // Уменьшаем отступы для мобильных устройств
+  background-color: var(--text-colorwh);
+  color: var(--text-colorbg);
+}
+
+.aboutus-header {
+  @include header-style(var(--text-colorbg));
+}
+
+.aboutus-header::before {
+  width: 40px; // Меньше ширина для мобильных устройств
+}
+
+.aboutus-hetext {
+  @include text-style(var(--text-colorbg));
+}
+
+.aboutus-underblock {
+  display: flex;
+  flex-direction: column; // Для мобильных устройств элементы должны быть друг под другом
+  align-items: center; // Центрируем содержимое
+}
+
+.aboutus-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 20px; // Уменьшаем отступы для мобильных устройств
+  padding-top: 100px; // Меньше отступ сверху для мобильных
+}
+
+.aboutus-desheader {
+  height: 36px;
+  width: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px; // Уменьшаем отступ
+}
+
+.aboutus-main {
+  display: block; // Для мобильных устройств можно сделать блоковый элемент
+}
+
+.aboutus-destext {
+  line-height: 1.25;
+  font-family: var(--text-body);
+  font-size: 20px; // Уменьшаем размер текста для мобильных
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  margin-bottom: 30px; // Меньше отступ
+}
+
+.aboutus-name-container {
+  font-family: var(--text-body);
+  font-size: 16px; // Меньше размер шрифта
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column; // Для мобильных устройств элементы идут в столбик
+  align-items: flex-start;
+}
+
+.aboutus-name {
+  margin-bottom: 10px;
+}
+
+.icon-aboutus {
+  display: flex;
+  justify-content: space-around; // Для мобильных делаем равномерное распределение
+  flex-wrap: wrap; // Даем возможность иконкам переноситься
+}
+
+.aboutus-svg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; // Уменьшаем размер иконок
+  fill: var(--text-colorbg);
+}
+
+.aboutus-row-svg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  fill: var(--text-colorwh);
+  background-color: var(--text-colorbg);
+}
+
+.aboutus-row-svg:not(:last-child) {
+  margin-bottom: 15px; // Меньше отступы между иконками
+}
+
+@media (min-width: 768px) {
+  .aboutus {
+    padding: 100px 40px; // Увеличиваем отступы
+  }
+
+  .aboutus-header::before {
+    width: 60px;
+  }
+
+  .aboutus-underblock {
+    flex-direction: row; // Для планшетов элементы идут в ряд
+    justify-content: flex-start; // Выравниваем элементы по началу
+  }
+
+  .aboutus-description {
+    padding-top: 180px; // Увеличиваем отступ сверху
+    margin-left: 40px; // Добавляем отступ слева
+  }
+
+  .aboutus-main {
+    display: flex;
+  }
+
+  .aboutus-destext {
+    font-size: 24px; // Увеличиваем размер текста
+    margin-bottom: 40px; // Увеличиваем отступ
+  }
+
+  .aboutus-name-container {
+    font-size: 18px; // Немного увеличиваем шрифт
+  }
+
+  .icon-aboutus {
+    justify-content: space-between; // Для планшета иконки должны быть более равномерно распределены
+  }
+
+  .aboutus-svg {
+    width: 55px;
+    height: 55px;
+  }
+
+  .aboutus-row-svg {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aboutus {
+    padding: 125px 80px; // Увеличиваем отступы для десктопов
+  }
+
+  .aboutus-header::before {
+    width: 80px;
+  }
+
+  .aboutus-underblock {
+    justify-content: space-between; // Располагаем элементы по бокам
+    align-items: center;
+  }
+
+  .aboutus-description {
+    margin-left: 158px; // Делаем отступ больше для десктопа
+    padding-top: 238px; // Больший отступ сверху
+  }
+
+  .aboutus-destext {
+    font-size: 32px; // Увеличиваем размер шрифта для десктопа
+    margin-bottom: 50px;
+  }
+
+  .aboutus-name-container {
+    font-size: 20px; // Увеличиваем размер шрифта для десктопа
+  }
+
+  .icon-aboutus {
+    justify-content: space-between; // Равномерное распределение
+  }
+
+  .aboutus-svg {
+    width: 65px;
+    height: 65px;
+  }
+
+  .aboutus-row-svg {
+    width: 65px;
+    height: 65px;
+  }
+}

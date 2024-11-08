@@ -1,0 +1,99 @@
+// .keep {
+//   padding: 200px 0;
+// }
+// .keep-main {
+//   text-align: center;
+// }
+// .keep-header {
+//   line-height: 1.25;
+//   font-family: var(--text-body);
+//   color: var(--text-colorwh);
+//   font-size: 72px;
+//   letter-spacing: 0.03em;
+//   font-weight: 700;
+//   margin-bottom: 30px;
+//   padding: 0px 130px;
+// }
+
+// .keep-button {
+//   padding: 22px 50px;
+//   background-color: var(--text-colorwh);
+//   color: var(--text-colorbg);
+//   line-height: 1.25;
+//   font-family: var(--text-body);
+//   font-size: 28px;
+//   letter-spacing: 0.03em;
+//   font-weight: 500;
+//   text-transform: uppercase;
+// }
+
+// @media (min-width: 768px) {
+// }
+
+// @media (min-width: 1024px) {
+// }
+
+.keep {
+  padding: 80px 20px; // Меньше отступы для мобильных устройств
+}
+
+.keep-main {
+  text-align: center; // Выравнивание по центру для мобильных
+}
+
+.keep-header {
+  line-height: 1.25;
+  font-family: var(--text-body);
+  color: var(--text-colorwh);
+  font-size: 32px; // Меньший размер шрифта для мобильных
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 0px 20px; // Меньше padding на мобильных
+}
+
+.keep-button {
+  padding: 16px 40px; // Меньше отступы для кнопки
+  background-color: var(--text-colorwh);
+  color: var(--text-colorbg);
+  line-height: 1.25;
+  font-family: var(--text-body);
+  font-size: 18px; // Уменьшаем размер шрифта для кнопки
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .keep {
+    padding: 120px 40px; // Увеличиваем отступы для планшетов
+  }
+
+  .keep-header {
+    font-size: 48px; // Увеличиваем размер шрифта
+    margin-bottom: 25px; // Увеличиваем отступ
+    padding: 0px 50px; // Увеличиваем padding
+  }
+
+  .keep-button {
+    padding: 18px 45px; // Немного увеличиваем отступы
+    font-size: 22px; // Увеличиваем размер шрифта для кнопки
+  }
+}
+
+@media (min-width: 1024px) {
+  .keep {
+    padding: 200px 80px; // Увеличиваем отступы для десктопов
+  }
+
+  .keep-header {
+    font-size: 72px; // Оставляем размер шрифта для десктопов
+    margin-bottom: 30px; // Увеличиваем отступ
+    padding: 0px 130px; // Большие отступы по бокам
+  }
+
+  .keep-button {
+    padding: 22px 50px; // Увеличиваем отступы для кнопки
+    font-size: 28px; // Увеличиваем размер шрифта для кнопки
+  }
+}
