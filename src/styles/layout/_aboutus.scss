@@ -1,114 +1,7 @@
-// @use "../components/mixin" as *;
-
-// .aboutus {
-//   padding: 125px 0px;
-//   background-color: var(--text-colorwh);
-//   color: var(--text-colorbg);
-// }
-
-// .aboutus-header {
-//   @include header-style(var(--text-colorbg));
-// }
-
-// .aboutus-header::before {
-//   width: 60px;
-// }
-
-// .aboutus-hetext {
-//   @include text-style(var(--text-colorbg));
-// }
-
-// .aboutus-underblock {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-
-// .aboutus-description {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   margin-left: 158px;
-//   padding-top: 238px;
-// }
-
-// .aboutus-desheader {
-//   height: 36px;
-//   width: 45px;
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: center;
-//   margin-bottom: 35px;
-// }
-
-// .aboutus-main {
-//   display: flex;
-// }
-
-// .aboutus-destext {
-//   line-height: 1.25;
-//   font-family: var(--text-body);
-//   font-size: 32px;
-//   letter-spacing: 0.03em;
-//   font-weight: 400;
-//   margin-bottom: 50px;
-// }
-
-// .aboutus-name-container {
-//   font-family: var(--text-body);
-//   font-size: 20px;
-//   letter-spacing: 0.03em;
-//   font-weight: 400;
-//   display: flex;
-//   width: 100%;
-//   justify-content: space-between;
-//   align-items: flex-end;
-// }
-
-// .aboutus-name {
-//   margin-bottom: 10px;
-// }
-
-// .icon-aboutus {
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .aboutus-svg {
-//   border-radius: 50%;
-//   width: 65px;
-//   height: 65px;
-//   fill: var(--text-colorbg);
-// }
-
-// .aboutus-row-svg {
-//   border-radius: 50%;
-//   width: 65px;
-//   height: 65px;
-//   fill: var(--text-colorwh);
-//   background-color: var(--text-colorbg);
-// }
-
-// .aboutus-row-svg:not(:last-child) {
-//   margin-right: 20px;
-// }
-
-// @media (min-width: 768px) {
-//   .aboutus-header::before {
-//     width: 80px;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .aboutus-header::before {
-//     width: 100px;
-//   }
-// }
-
 @use "../components/mixin" as *;
 
 .aboutus {
-  padding: 50px 20px; 
+  padding: 50px 20px;
   background-color: var(--text-colorwh);
   color: var(--text-colorbg);
 }
@@ -118,24 +11,30 @@
 }
 
 .aboutus-header::before {
-  width: 40px; 
-
+  width: 40px;
+}
+.aboutus-namebl {
+  margin-bottom: 30px;
+}
+.about-img {
+  width: 462px;
+  height: 483px;
+}
 .aboutus-hetext {
   @include text-style(var(--text-colorbg));
 }
 
 .aboutus-underblock {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutus-description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 20px; 
-  padding-top: 100px; 
+  padding-top: 100px;
 }
 
 .aboutus-desheader {
@@ -144,29 +43,29 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .aboutus-main {
-  display: block;  
+  display: block;
 }
 
 .aboutus-destext {
   line-height: 1.25;
   font-family: var(--text-body);
-  font-size: 20px; 
+  font-size: 20px;
   letter-spacing: 0.03em;
   font-weight: 400;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .aboutus-name-container {
   font-family: var(--text-body);
-  font-size: 16px; 
+  font-size: 16px;
   letter-spacing: 0.03em;
   font-weight: 400;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
 }
 
@@ -176,14 +75,14 @@
 
 .icon-aboutus {
   display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap; 
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .aboutus-svg {
   border-radius: 50%;
   width: 50px;
-  height: 50px; 
+  height: 50px;
   fill: var(--text-colorbg);
 }
 
@@ -196,26 +95,29 @@
 }
 
 .aboutus-row-svg:not(:last-child) {
-  margin-bottom: 15px; 
+  margin-right: 20px;
 }
 
 @media (min-width: 768px) {
   .aboutus {
-    padding: 100px 40px; 
+    padding: 100px 0px;
   }
 
   .aboutus-header::before {
     width: 60px;
   }
+  .aboutus-namebl {
+    margin-bottom: 30px;
+  }
 
   .aboutus-underblock {
-    flex-direction: row; 
-    justify-content: flex-start; 
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
   .aboutus-description {
-    padding-top: 180px; 
-    margin-left: 40px; 
+    margin-left: 108px;
+    padding-top: 178px;
   }
 
   .aboutus-main {
@@ -223,16 +125,16 @@
   }
 
   .aboutus-destext {
-    font-size: 24px; 
-    margin-bottom: 40px; 
+    font-size: 24px;
+    margin-bottom: 40px;
   }
 
   .aboutus-name-container {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   .icon-aboutus {
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
   .aboutus-svg {
@@ -246,35 +148,41 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .aboutus {
-    padding: 125px 80px; 
+    padding: 125px 0px;
   }
 
   .aboutus-header::before {
     width: 80px;
   }
-
-  .aboutus-underblock {
-    justify-content: space-between; 
-    align-items: center;
+  .aboutus-namebl {
+    margin-bottom: 0px;
   }
 
   .aboutus-description {
-    margin-left: 158px; 
-    padding-top: 238px; 
+    margin-left: 158px;
+    padding-top: 238px;
   }
 
   .aboutus-destext {
-    font-size: 32px; 
+    font-size: 32px;
   }
 
   .aboutus-name-container {
-    font-size: 20px; 
+    width: 100%;
+    font-size: 20px;
+    font-family: var(--text-body);
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   .icon-aboutus {
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
   .aboutus-svg {

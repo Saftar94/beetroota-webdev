@@ -1,159 +1,3 @@
-// @use "../components/mixin" as *;
-
-// .portfolio {
-//   padding: 125px 0px;
-// }
-
-// .portgolio-headerblock {
-//   width: 25%;
-// }
-
-// .portgolio-header {
-//   @include header-style(var(--text-colorwh));
-// }
-
-// .portgolio-header::before {
-//   width: 60px;
-// }
-
-// .portgolio-hetext {
-//   @include text-style(var(--text-colorwh));
-// }
-
-// .portfolio-list:not(:last-child) {
-//   margin-bottom: 40px;
-// }
-
-// .portfolio-items {
-//   list-style: none;
-//   padding: 0;
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .portfolio-list {
-//   display: flex;
-//   margin-bottom: 40px;
-
-//   &:nth-child(odd) {
-//     flex-direction: row; /* Картинка слева, текст справа */
-//   }
-
-//   &:nth-child(even) {
-//     flex-direction: row-reverse; /* Картинка справа, текст слева */
-//   }
-// }
-
-// .portfolio-blockimg {
-//   flex: 0 0 638px;
-//   height: 650px;
-
-//   &:nth-child(even) {
-//     margin-right: 0;
-//     margin-left: 20px;
-//   }
-// }
-
-// .picture-img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
-
-// .portfolio-description {
-//   padding: 0px 90px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   border: 1px solid var(--text-colorwh);
-//   border-top: 1px solid var(--text-colorwh);
-//   border-bottom: 1px solid var(--text-colorwh);
-//   border-left: none;
-//   border-right: none;
-// }
-
-// .portfolio-list:nth-child(odd) .portfolio-description {
-//   border-right: 1px solid var(--text-colorwh);
-// }
-
-// .portfolio-list:nth-child(even) .portfolio-description {
-//   border-left: 1px solid var(--text-colorwh);
-// }
-
-// .portgolio-desheader {
-//   line-height: 1.71;
-//   color: var(--text-colorwh);
-//   font-family: var(--text-body);
-//   font-size: 18px;
-//   font-weight: 500;
-//   letter-spacing: 0.03em;
-//   margin-bottom: 20px;
-// }
-// .portgolio-desmain {
-//   line-height: 1.71;
-//   color: var(--text-colorwh);
-//   font-family: var(--text-body);
-//   font-size: 22px;
-//   letter-spacing: 0.03em;
-//   font-weight: 700;
-//   margin-bottom: 20px;
-// }
-
-// .portgolio-destext {
-//   line-height: 1.71;
-//   color: var(--text-colorwh);
-//   font-family: var(--text-body);
-//   font-size: 16px;
-//   letter-spacing: 0.03em;
-//   padding-bottom: 40px;
-// }
-
-// .know-more-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   width: 46%;
-//   padding: 10px;
-//   box-sizing: border-box;
-//   position: relative;
-//   overflow: hidden;
-// }
-
-// .know-more-text {
-//   margin: 0;
-//   font-size: 18px;
-//   flex-grow: 1;
-// }
-
-// .icon-know {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 24px;
-//   height: 24px;
-//   background-color: var(--text-colorwh);
-//   border-radius: 50%;
-// }
-
-// .iconknow-svg {
-//   width: 100%;
-//   height: auto;
-//   fill: var(--text-colorbg);
-//   padding: 5px;
-// }
-
-// @media (min-width: 768px) and (max-width: 1024px) {
-//   .portgolio-header::before {
-//     width: 80px;
-//   }
-// }
-
-// @media (min-width: 1025px) {
-//   .portgolio-header::before {
-//     width: 100px;
-//   }
-// }
-
 @use "../components/mixin" as *;
 
 .portfolio {
@@ -176,10 +20,6 @@
   @include text-style(var(--text-colorwh));
 }
 
-.portfolio-list:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 .portfolio-items {
   list-style: none;
   padding: 0;
@@ -189,14 +29,13 @@
 
 .portfolio-list {
   display: flex;
-  flex-direction: column; /* Колонкой на мобильных */
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
-/* Изображения и описание на мобильной версии */
 .portfolio-blockimg {
   width: 100%;
-  height: 200px;
+  height: 250px;
 }
 
 .picture-img {
@@ -206,29 +45,12 @@
 }
 
 .portfolio-description {
-  // padding: 20px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // border-top: 1px solid var(--text-colorwh);
-  // border-bottom: 1px solid var(--text-colorwh);
-  padding: 0px 90px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid var(--text-colorwh);
-  border-top: 1px solid var(--text-colorwh);
-  border-bottom: 1px solid var(--text-colorwh);
-  border-left: none;
-  border-right: none;
-}
-
-.portfolio-list:nth-child(odd) .portfolio-description {
-  border-right: 1px solid var(--text-colorwh);
-}
-
-.portfolio-list:nth-child(even) .portfolio-description {
-  border-left: 1px solid var(--text-colorwh);
+  border-top: none;
 }
 
 .portgolio-desheader,
@@ -253,15 +75,13 @@
 
 .portgolio-destext {
   font-size: 14px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .know-more-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
-  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -270,18 +90,23 @@
 }
 
 .icon-know {
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
   background-color: var(--text-colorwh);
   border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .iconknow-svg {
-  width: 100%;
-  height: auto;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
   fill: var(--text-colorbg);
 }
-
 
 @media (min-width: 768px) {
   .portfolio {
@@ -297,19 +122,41 @@
   }
 
   .portfolio-list {
-    flex-direction: row; /
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  .portfolio-list:nth-child(odd) {
+    flex-direction: row;
+  }
+
+  .portfolio-list:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
   .portfolio-blockimg {
+    flex: 0 0 350px;
     height: 400px;
   }
 
   .portfolio-description {
-    padding: 0 40px;
+    padding: 0px 40px;
+    border: 1px solid var(--text-colorwh);
+    border-top: 1px solid var(--text-colorwh);
+    border-bottom: 1px solid var(--text-colorwh);
+    border-left: none;
+    border-right: none;
+  }
+
+  .portfolio-list:nth-child(odd) .portfolio-description {
+    border-right: 1px solid var(--text-colorwh);
+  }
+
+  .portfolio-list:nth-child(even) .portfolio-description {
+    border-left: 1px solid var(--text-colorwh);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .portfolio {
     padding: 125px 0;
   }
@@ -322,12 +169,16 @@
     width: 100px;
   }
 
+  .portfolio-list {
+    margin-bottom: 50px;
+  }
+
   .portfolio-list:nth-child(odd) {
-    flex-direction: row; 
+    flex-direction: row;
   }
 
   .portfolio-list:nth-child(even) {
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
   }
 
   .portfolio-blockimg {

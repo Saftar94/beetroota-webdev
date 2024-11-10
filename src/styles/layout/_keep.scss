@@ -1,40 +1,5 @@
-// .keep {
-//   padding: 200px 0;
-// }
-// .keep-main {
-//   text-align: center;
-// }
-// .keep-header {
-//   line-height: 1.25;
-//   font-family: var(--text-body);
-//   color: var(--text-colorwh);
-//   font-size: 72px;
-//   letter-spacing: 0.03em;
-//   font-weight: 700;
-//   margin-bottom: 30px;
-//   padding: 0px 130px;
-// }
-
-// .keep-button {
-//   padding: 22px 50px;
-//   background-color: var(--text-colorwh);
-//   color: var(--text-colorbg);
-//   line-height: 1.25;
-//   font-family: var(--text-body);
-//   font-size: 28px;
-//   letter-spacing: 0.03em;
-//   font-weight: 500;
-//   text-transform: uppercase;
-// }
-
-// @media (min-width: 768px) {
-// }
-
-// @media (min-width: 1024px) {
-// }
-
 .keep {
-  padding: 80px 20px;
+  padding: 80px 0px;
 }
 
 .keep-main {
@@ -66,7 +31,7 @@
 
 @media (min-width: 768px) {
   .keep {
-    padding: 120px 40px;
+    padding: 120px 0px;
   }
 
   .keep-header {
@@ -81,9 +46,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .keep {
-    padding: 200px 80px;
+    padding: 200px 0px;
   }
 
   .keep-header {

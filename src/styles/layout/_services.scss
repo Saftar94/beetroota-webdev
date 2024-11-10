@@ -60,7 +60,7 @@
   transition: max-height 0.4s ease-in-out;
 }
 .services-left {
-  margin-right: 320px;
+  margin-right: 273px;
 }
 
 .service-title {
@@ -115,7 +115,7 @@
   right: 20px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .services {
     padding: 100px 0;
   }
@@ -124,7 +124,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .services {
     padding: 125px 0;
   }
