@@ -746,7 +746,7 @@ textarea {
   margin-right: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .home {
     padding: 100px 20px;
   }
@@ -772,7 +772,7 @@ textarea {
     width: 120px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .home-header {
     font-size: 32px;
     margin-bottom: 30px;
@@ -784,7 +784,7 @@ textarea {
     width: 140px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 1200px) {
   .home-header {
     margin-bottom: 50px;
     z-index: 2;
@@ -796,7 +796,7 @@ textarea {
     height: 10px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .home-content {
     background-size: 400px 100%;
     background-position: 80% 0%;
@@ -1390,13 +1390,13 @@ textarea {
     border-left: 1px solid var(--text-colorwh);
   }
 }
-.aboutus {
+.about-us {
   padding: 50px 20px;
   background-color: var(--text-colorwh);
   color: var(--text-colorbg);
 }
 
-.aboutus-header {
+.about-us-header {
   position: relative;
   margin-bottom: 25px;
   text-transform: uppercase;
@@ -1407,7 +1407,7 @@ textarea {
   line-height: 1.3;
   color: var(--text-colorbg);
 }
-.aboutus-header::before {
+.about-us-header::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -1418,35 +1418,35 @@ textarea {
   width: 120px;
 }
 @media (min-width: 768px) {
-  .aboutus-header {
+  .about-us-header {
     font-size: 32px;
     margin-bottom: 30px;
     line-height: 1.2;
   }
-  .aboutus-header::before {
+  .about-us-header::before {
     top: -25px;
     height: 7px;
     width: 140px;
   }
 }
 @media (min-width: 1200px) {
-  .aboutus-header {
+  .about-us-header {
     margin-bottom: 50px;
     z-index: 2;
     font-weight: 900;
     font-size: 56px;
   }
-  .aboutus-header::before {
+  .about-us-header::before {
     top: -65px;
     height: 10px;
   }
 }
 
-.aboutus-header::before {
+.about-us-header::before {
   width: 40px;
 }
 
-.aboutus-namebl {
+.about-us-namebl {
   margin-bottom: 30px;
 }
 
@@ -1455,7 +1455,7 @@ textarea {
   height: 483px;
 }
 
-.aboutus-hetext {
+.about-us-hetext {
   margin-bottom: 40px;
   font-size: 17px;
   font-family: var(--text-body);
@@ -1463,20 +1463,20 @@ textarea {
   color: var(--text-colorbg);
 }
 
-.aboutus-underblock {
+.about-us-underblock {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.aboutus-description {
+.about-us-description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 100px;
 }
 
-.aboutus-desheader {
+.about-us-desheader {
   height: 36px;
   width: 45px;
   display: flex;
@@ -1485,11 +1485,11 @@ textarea {
   margin-bottom: 20px;
 }
 
-.aboutus-main {
+.about-us-main {
   display: block;
 }
 
-.aboutus-destext {
+.about-us-destext {
   line-height: 1.25;
   font-family: var(--text-body);
   font-size: 20px;
@@ -1498,7 +1498,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-.aboutus-name-container {
+.about-us-name-container {
   font-family: var(--text-body);
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -1508,24 +1508,24 @@ textarea {
   align-items: flex-start;
 }
 
-.aboutus-name {
+.about-us-name {
   margin-bottom: 10px;
 }
 
-.icon-aboutus {
+.icon-about-us {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.aboutus-svg {
+.about-us-svg {
   border-radius: 50%;
   width: 50px;
   height: 50px;
   fill: var(--text-colorbg);
 }
 
-.aboutus-row-svg {
+.about-us-row-svg {
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -1533,68 +1533,68 @@ textarea {
   background-color: var(--text-colorbg);
 }
 
-.aboutus-row-svg:not(:last-child) {
+.about-us-row-svg:not(:last-child) {
   margin-right: 20px;
 }
 
 @media (min-width: 768px) {
-  .aboutus {
+  .about-us {
     padding: 100px 0px;
   }
-  .aboutus-header::before {
+  .about-us-header::before {
     width: 60px;
   }
-  .aboutus-namebl {
+  .about-us-namebl {
     margin-bottom: 30px;
   }
-  .aboutus-underblock {
+  .about-us-underblock {
     flex-direction: row;
     justify-content: flex-start;
   }
-  .aboutus-description {
+  .about-us-description {
     margin-left: 108px;
     padding-top: 178px;
   }
-  .aboutus-main {
+  .about-us-main {
     display: flex;
   }
-  .aboutus-destext {
+  .about-us-destext {
     font-size: 24px;
     margin-bottom: 40px;
   }
-  .aboutus-name-container {
+  .about-us-name-container {
     font-size: 18px;
   }
-  .icon-aboutus {
+  .icon-about-us {
     justify-content: space-between;
   }
-  .aboutus-svg {
+  .about-us-svg {
     width: 55px;
     height: 55px;
   }
-  .aboutus-row-svg {
+  .about-us-row-svg {
     width: 55px;
     height: 55px;
   }
 }
 @media (min-width: 1200px) {
-  .aboutus {
+  .about-us {
     padding: 125px 0px;
   }
-  .aboutus-header::before {
+  .about-us-header::before {
     width: 80px;
   }
-  .aboutus-namebl {
+  .about-us-namebl {
     margin-bottom: 0px;
   }
-  .aboutus-description {
+  .about-us-description {
     margin-left: 158px;
     padding-top: 238px;
   }
-  .aboutus-destext {
+  .about-us-destext {
     font-size: 32px;
   }
-  .aboutus-name-container {
+  .about-us-name-container {
     width: 100%;
     font-size: 20px;
     font-family: var(--text-body);
@@ -1605,14 +1605,14 @@ textarea {
     align-items: flex-start;
     justify-content: space-between;
   }
-  .icon-aboutus {
+  .icon-about-us {
     justify-content: space-between;
   }
-  .aboutus-svg {
+  .about-us-svg {
     width: 65px;
     height: 65px;
   }
-  .aboutus-row-svg {
+  .about-us-row-svg {
     width: 65px;
     height: 65px;
   }
